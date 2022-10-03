@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { Header } from '../components/header/Header'
 import { GlobalStyle } from '../theme/Global'
 
 const Home: NextPage = () => {
@@ -12,7 +13,7 @@ const Home: NextPage = () => {
 
       <div>
         <GlobalStyle />
-        <h1>hello next</h1>
+        <Header />
       </div>
     </div>
   )
