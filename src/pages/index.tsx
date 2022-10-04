@@ -1,7 +1,8 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Header } from '../components/header/Header'
+import type { NextPage } from 'next'
 import { GlobalStyle } from '../theme/Global'
+import { Header } from '../components/header/Header'
+import { Content } from '../components/content/Content'
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
       <div>
         <GlobalStyle />
         <Header />
+        <Content />
       </div>
     </div>
   )

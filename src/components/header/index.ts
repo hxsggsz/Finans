@@ -25,8 +25,8 @@ li {
 
 li::before {
    content: "";
-   top: 60px;
-   right: 100px;
+   top: 65px;
+   right: 150px;
    width: 100px;
    height: 3px;
    background: currentColor;
@@ -41,11 +41,11 @@ li:hover::before {
    height: 3px;
    margin: 0 auto;
    display: block;
-   transform: scaleX(2.5);
+   transform: scaleX(3);
 }
 `;
 
-export const Section = styled.section`
+export const Section = styled.article`
    h1, p {
       color: #f5f5f5;
       font-size: 50px;
@@ -57,11 +57,12 @@ export const Section = styled.section`
    }
    h1 {
       width: 30%;
+      min-width: 20%;
    }
    p {
-      top:350px;
+      top: 350px;
       width: 45%;
-      
+      min-width: 20%;
       font-size: 30px;
    }
 
@@ -70,12 +71,16 @@ export const Section = styled.section`
       font-style: italic;
       font-size: 32px;
    }
+
+   div {
+      transform: scale(1.3);
+      display: flex;
+      justify-content: end;
+      position: relative;
+
+
+      top: 9.8rem;
+      right: 35rem;
+   }
 `;
 
-export const Picture = styled.image`
-      width: 100%;
-      
-      bottom: 15px;
-      left: 45rem;
-      position: absolute;
-`;
