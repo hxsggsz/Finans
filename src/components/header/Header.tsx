@@ -11,8 +11,8 @@ export const Header: React.FC = () => {
             <nav>
                   <Link href='/'><a><Image alt='logo' src={logo} /></a></Link>
                <ul>
-                  <a href='https://www.linkedin.com/in/victor-hugo-994967241/' ><li>Linkedin</li></a>
-                  <a href='https://www.github.com/hxsggsz' ><li>GitHub</li></a>
+                  <a href='https://www.linkedin.com/in/victor-hugo-994967241/' target='_blank' ><li>Linkedin</li></a>
+                  <a href='https://www.github.com/hxsggsz' target='_blank' ><li>GitHub</li></a>
                </ul>
             </nav>
          </div>

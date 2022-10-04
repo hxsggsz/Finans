@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const Container = styled.section`
-   width: 218.5vh;
+   width: 100%;
    height: 100vh;
    background: #F5BB00;
    
@@ -14,7 +14,7 @@ nav, ul {
 }
 
 li {
-   margin: 2px;
+   margin: 3px 10px;
    padding: 2vh;
    color: white;
    font-size: 4vh;
@@ -24,22 +24,24 @@ li {
 
 li::before {
    content: "";
-   width: 100%;
-  height: 100%;
-
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 250ms ease-in; 
+   top: 65px;
+   right: 100px;
+   width: 100px;
+   height: 3px;
+   background: currentColor;
+   margin: 0 auto;
+   position: absolute;
+   display: block;
+   transform: scaleX(0);
+   transition: transform 250ms ease; 
 }
 
 li:hover::before {
-   background: #F5F5F5;
-   transform: scaleX(1);
-   transform-origin: left;
-   
+   width: 100%;
+   height: 3px;
+   margin: 0 auto;
+   background: currentColor;
+   display: block;
+   transform: scaleX(2.5);
 }
-
 `;
