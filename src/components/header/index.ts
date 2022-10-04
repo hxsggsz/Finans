@@ -83,4 +83,3 @@ export const Section = styled.article`
       right: 35rem;
    }
 `;
-

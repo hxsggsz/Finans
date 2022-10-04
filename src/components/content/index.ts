@@ -14,6 +14,7 @@ export const FirstContent = styled.section`
       justify-content: center;
       position: absolute;
       left: 5rem;
+      
    }
 
    h1 {
