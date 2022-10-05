@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import Image from 'next/image';
-
 
 export const HeaderStyle = styled.header`
    width: 100%;
@@ -43,6 +41,17 @@ li:hover::before {
    display: block;
    transform: scaleX(3);
 }
+
+@media (min-width: 1200px) {
+   li::before {
+      top: 3rem;
+      width: 10rem;
+   }
+
+   li:hover::before {
+      width: 10rem;
+   }
+}
 `;
 
 export const Section = styled.article`
@@ -73,13 +82,22 @@ export const Section = styled.article`
    }
 
    div {
-      transform: scale(1.3);
+      top: 9.8rem;
+      right: 35rem;
+      
       display: flex;
       justify-content: end;
       position: relative;
 
+      transform: scale(1.3);
 
-      top: 9.8rem;
-      right: 35rem;
+   }
+   @media (min-width: 1200px) {
+      div {
+         top: 4.8rem;
+         right: 15rem;
+         position: absolute;
+         transform: scale(1);
+      }
    }
 `;
