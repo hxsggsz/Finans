@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const HeaderStyle = styled.header`
    background: #FFD639;
-   width: 100%;
-   height: 97vh;
+   width: 99vw;
+   height: 100vh;
+   overflow: hidden;
 `;
 
 export const NavStyle = styled.nav`
@@ -60,12 +61,29 @@ export const TextStyle = styled.div`
    align-items: center;
    flex-direction: column;
 
-   border: 1px solid red;
    h1 {
       font-size: 58px;
    }
 
-   p, span {
+   p {
       font-size: 32px;   
    }
+`;
+
+export const ClockStyle = styled.div`
+   width: 30vw;
+   min-width: 20vw;
+
+   
+`;
+
+export const WomanStyle = styled.div`
+   width: 30vw;
+
+   display: flex;
+   justify-content: center;
+
+   right: 0;
+   bottom: 0;
+   position: absolute;
 `;
