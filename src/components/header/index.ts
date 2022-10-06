@@ -4,6 +4,7 @@ export const HeaderStyle = styled.header`
    width: 100%;
    height: 95vh;
    background: #F5BB00;
+   box-shadow: 2px 5px 10px 1px rgba(0, 0, 0, 0.2);
    
 nav, ul {
    display: flex;
@@ -42,7 +43,7 @@ li:hover::before {
    transform: scaleX(3);
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1440px) {
    li::before {
       top: 3rem;
       width: 10rem;
@@ -57,21 +58,17 @@ li:hover::before {
 export const Section = styled.article`
    h1, p {
       color: #f5f5f5;
-      font-size: 50px;
-
+      font-size: 40px;
+      min-width: 20rem;
+      max-width: 40rem;
       top: 200px;
       margin: auto 3rem;
       display: block;
       position: absolute;
    }
-   h1 {
-      width: 30%;
-      min-width: 20%;
-   }
+
    p {
       top: 350px;
-      width: 45%;
-      min-width: 20%;
       font-size: 30px;
    }
 
@@ -82,22 +79,19 @@ export const Section = styled.article`
    }
 
    div {
-      top: 9.8rem;
-      right: 35rem;
-      
+      right: 15rem;
+      top: -32px;
       display: flex;
-      justify-content: end;
       position: relative;
-
-      transform: scale(1.3);
-
+      justify-content: end;
    }
-   @media (min-width: 1200px) {
+   @media (max-width: 1350px) {
+      font-size: 20px;
       div {
-         top: 4.8rem;
-         right: 15rem;
-         position: absolute;
-         transform: scale(1);
+         top: -2.5rem;
+         right: 0;
+         position: relative;
+         transform: scale(0.9);
       }
    }
 `;

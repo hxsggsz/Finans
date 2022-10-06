@@ -41,7 +41,7 @@ import Document, {
      return (
        <Html lang="pt-br">
          <Head>
-           <meta charSet="utf-8" />
+            <meta charSet="utf-8" />
          </Head>
          <body>
            <Main />

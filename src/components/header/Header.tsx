@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { HeaderStyle, Section} from '.';
-import logo from '../../assets/pictures/logo.png';
-import mulher from '../../assets/pictures/capa-mulher.png';
+import logo from '../../assets/pic/logo.png';
+import mulher from '../../assets/pic/capa-mulher.png';
 
 export const Header: React.FC = () => {
    return (

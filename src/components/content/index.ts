@@ -15,7 +15,6 @@ export const FirstContent = styled.section`
       justify-content: center;
       position: absolute;
       left: 5rem;
-      
    }
 
    h1 {
@@ -33,14 +32,13 @@ export const FirstContent = styled.section`
       bottom: 15rem;
    }
 
-   @media (min-width: 1200px) {
+   @media (max-width: 1440px) {
       h1, p {
          top: 13rem;
          left: -45rem;
          width: 30rem;
          height: 30px;
          position: relative;
-        
       }
 
       div {
@@ -50,3 +48,28 @@ export const FirstContent = styled.section`
       }
    }
 `; 
+
+export const Section = styled.section`
+   width: 30rem;
+   height: 130px;
+   margin: 10rem 10rem;
+
+   display: flex;
+   justify-content: end;
+   flex-direction: column;
+   
+   right: 0;
+   position: absolute;
+
+   h1 {
+      margin-left: 6rem;
+   }
+`;
+
+export const Picture = styled.div`
+   width: 75%;
+   height: 75%;
+
+   right: 10rem;
+   position: relative;
+`;
