@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 
    body {
       background: #f5f5f5;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    }
 
    a {
