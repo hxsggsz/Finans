@@ -1,4 +1,4 @@
-import { FirstContent, Picture, Section } from '.'
+import { FirstContent, TextStyle, ImageStyle, SecondContentStyle } from '.'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import saiba from '../../assets/pic/saiba.png'
@@ -8,47 +8,48 @@ export const Content: React.FC = () => {
    return (
       <>
          <FirstContent>
-            <motion.div 
-               initial={{x: -200, opacity: 0}}
-               whileInView={{x: 0, opacity: 1}}
-               viewport={{once: true, amount:1}}
-               transition={{delay: 0.3}}
+            <motion.div
+               initial={{x: -100, opacity: 0, scale: 0.5}}
+               whileInView={{x: 0, opacity: 1, scale: 1}}
+               whileHover={{ scale: 1.1}}
+               viewport={{once: true, amount: 0.5}}
             >
-               <section>
+               <TextStyle>
                   <h1>Neque porro quisquam</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id sodales magna, vitae lacinia magna. Praesent semper felis orci, in sodales ipsum vehicula id.</p>
-               </section>
+               </TextStyle>
             </motion.div>
 
             <motion.div 
                initial={{x: 100, opacity: 0}}
                whileInView={{x: 0, opacity: 1}}
-               viewport={{once: true, amount:0.6}}
-            ><Image alt='saiba mais' src={saiba} /></motion.div>
-
+               viewport={{once: true, amount:0.5}}
+            >
+               <ImageStyle><Image alt='saiba mais' src={saiba} /></ImageStyle>
+            </motion.div>
          </FirstContent>
-         <div>
-         <Section>
+         
+         <SecondContentStyle>
             <motion.div
-            initial={{x: 50, opacity: 0}}
-            whileInView={{x: 0, opacity: 1}}
-            viewport={{once: true, amount:1}}
+               initial={{x: -50, opacity: 0}}
+               whileInView={{x: 0, opacity: 1}}
+               viewport={{once: true, amount:0.5}}
             >
-               <h1>Neque porro quisquam</h1>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id sodales magna, vitae lacinia magna. Praesent semper felis orci, in sodales ipsum vehicula id.</p>
+               <ImageStyle><Image alt='suporte' src={suporte} /></ImageStyle>
             </motion.div>
-         </Section>
 
-         <Picture>
             <motion.div
-            initial={{x: -50, opacity: 0}}
-            whileInView={{x: 0, opacity: 1}}
-            viewport={{once: true, amount:0.3}}
+               initial={{x: 100, opacity: 0, scale: 0.5}}
+               whileInView={{x: 0, opacity: 1, scale: 1}}
+               whileHover={{ scale: 1.1}}
+               viewport={{once: true, amount: 0.5}}
             >
-               <Image alt='suporte' src={suporte} />
+               <TextStyle>
+                  <h1>Neque porro quisquam</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id sodales magna, vitae lacinia magna. Praesent semper felis orci, in sodales ipsum vehicula id.</p>
+               </TextStyle>
             </motion.div>
-         </Picture>
-         </div>
+         </SecondContentStyle>
       </>
    )
 }

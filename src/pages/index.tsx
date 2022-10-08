@@ -3,6 +3,7 @@ import type { NextPage } from 'next'
 import { GlobalStyle } from '../theme/Global'
 import { Header } from '../components/header/Header'
 import { Content } from '../components/content/Content'
+import { Footer } from '../components/footer/Footer'
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
         <GlobalStyle />
         <Header />
         <Content />
+        <Footer />
       </div>
     </div>
   )
